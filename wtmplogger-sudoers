@@ -1,0 +1,2 @@
+# wtmplogger needs passwordless sudo access
+ALL	ALL=(ALL) NOPASSWD: /usr/local/bin/wtmplogger *

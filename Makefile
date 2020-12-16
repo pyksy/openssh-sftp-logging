@@ -2,6 +2,7 @@ CC ?= gcc
 CFLAGS ?= -W -Wall -O2
 LDFLAGS ?= 
 EXES = sftpwrapper wtmplogger
+SUDOERS = wtmplogger-sudoers
 COMMON_HEADERS = logger.h proc_pid_util.h config.h
 COMMON_MODULES = config.c proc_pid_util.c
 
@@ -18,3 +19,4 @@ clean:
 
 install:	$(EXES)
 	install $(EXES) /usr/local/bin/
+	install -m 660 ${SUDOERS} /etc/sudoers.d/
