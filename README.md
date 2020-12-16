@@ -52,7 +52,6 @@ Insert the following line into `/etc/sudoers.d/wtmp-privilege`:
 ```
 
 ## 4. Change the following line in sshd_config from:
-
 ```
 Subsystem sftp /usr/lib/openssh/sftp-server
 ```
