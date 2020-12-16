@@ -25,18 +25,7 @@ $ make
 $ sudo make install
 ```
 
-3. Enable sudo for /usr/local/bin/wtmplogger binary for users to log.
-
-Example: Enable users in *wtmploggers* group to execute the binary:
-```
-$ sudoedit /etc/sudoers.d/wtmp-privilege
-```
-And insert line:
-```
-%wtmploggers    ALL = NOPASSWD: /usr/local/bin/wtmplogger
-```
-
-4. Change the following line in sshd_config from:
+3. Change the following line in sshd_config from:
 ```
 Subsystem sftp /usr/lib/openssh/sftp-server
 ```
