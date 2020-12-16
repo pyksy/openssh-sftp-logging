@@ -19,4 +19,4 @@ clean:
 
 install:	$(EXES)
 	install $(EXES) /usr/local/bin/
-	install -m 660 ${SUDOERS} /etc/sudoers.d/
+	install -m 440 ${SUDOERS} /etc/sudoers.d/
